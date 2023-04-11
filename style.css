@@ -1,0 +1,151 @@
+body{
+   margin: 0;
+   padding: 0;
+   display: flex;
+   justify-content: center;
+   width: 100%;
+   min-height: 100vh;
+   align-items: center;
+   background-color: grey;
+   color: rgb(4, 240, 4);
+}
+.background-image{
+    background-image: url('background.jpg');
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+
+.feedback-container{
+   background-color: grey;
+   opacity: 88%;
+   width: 400px;
+   height: 200px;
+   box-shadow: 0 4px 8px rgba(0,0,0,.3);
+   border-radius: 10px;
+   position: relative;
+}
+
+.emoji-container{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 20%;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    display: flex;
+    overflow: hidden;
+
+}
+
+.rating-container{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 20%;
+
+}
+
+.far{
+    margin: 1px;
+    transform: translateX(0px);
+    transition: transform 0.3s;
+}
+
+.fa-star{
+    color: white;
+    cursor: pointer;
+}
+
+.fa-star.active{
+    margin: 0px;
+    color: gold;
+
+}
+ h2{
+    margin: 0;
+    position: relative;
+    font-family: cursive;
+    text-transform: uppercase;
+    left: 20px;
+    bottom: 90%;
+    color: white;
+    font-weight: bold;
+ }
+
+ .year{
+    position: relative;
+    left: 170px;
+    bottom: 85%;
+    font-size: 2em;
+    font-weight: bold;
+    color: white;
+ }
+
+ .countdown{
+    position: relative;
+    margin: 30px;
+    background-color: rgba(0,0,0,.3);
+    width: 86%;
+    bottom: 92%;
+    color: white;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+ }
+
+ .countdown div{
+    margin: 0 15px;
+    font-size: 2em;
+    font-weight: 500;
+    margin-top: -18px;
+    position: relative;
+    text-align: center;
+    width: 90px;
+ }
+
+ .countdown div::before{
+    content: "";
+    position: absolute;
+    bottom: -25px;
+    left: 0;
+    font-size: .40em;
+    line-height: 35px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
+    width: 100%;
+    height: 35px;
+}
+
+.countdown #day::before{
+    content: "Day";
+}
+
+.countdown #hour::before{
+    content: "Hours";
+}
+
+.countdown #minute::before{
+    content: "Minutes";
+}
+
+.countdown #second::before{
+    content: "Seconds";
+}
+p{
+    font-size: 15px;
+    font-family: cursive;
+    font-weight: bold;
+    letter-spacing: 2px;
+    bottom: 33px;
+    color: gold;
+    position: relative;
+    left: 112px;
+
+}
